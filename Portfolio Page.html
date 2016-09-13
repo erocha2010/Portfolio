@@ -1,0 +1,137 @@
+<style>
+ .space {
+  padding: 70px 0px 0px 0px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+}
+
+.div-bg-purple {
+  background-color: purple;
+}
+
+.div-bg-gray {
+  background-color: gray;
+}
+
+.move-center { 
+  text-align: center; 
+}
+
+.move-left {
+  float:left;
+}  
+
+.move-right {
+  float:right;
+}  
+
+.red-text {
+    color: red;
+  }
+
+p1 {
+    font-size: 50px;
+    font-family: Monospace;
+  }
+
+.large-img {
+  width: 200px;
+}
+
+.black-border {
+  border-color: black;
+  border-size: 1px;
+  border-style: solid;
+  border-radius: 0px;
+}
+
+.green-border {
+  border-color: green;
+  border-size: 50px;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+.blue-border {
+  border-color: blue;
+  border-size: 50px;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+.larger-text {
+  width: 400px;
+}
+</style>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#click").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#middle").offset().top
+                }, 2000);
+            });
+        });
+    </script>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+<header class="div-bg-purple black-border"><a href="#top">
+  <button class="btn">about</button>
+  </a>
+  <a href="#middle">
+    <button id="#click" class="btn">  portfolio</button>
+  </a>
+  <a href=#bottom>
+    <button id="#click"class="btn">
+      contact</button>
+      </a></header>
+
+
+<div id="top" class="container-fluid div-bg-gray space black-border">
+
+  <h1>Hello, I am Edgardo Rocha  and I'm an UX/UI designeveloper; devoted to Functional Programming and Information Architecture. Also a huge fan of semantics and futuristic interfaces.</h1>
+  <p class="move-center">-----------------------</p>
+  <p class="move-center">Web Developer - Graphic Artist - User Experience Designer</p>
+  <img class="large-img green-border move-right" src="http://www.teesunleashed.com/images/tees/big/4258800-YourFaceHere.png" alt="your face here ">
+</div>
+
+
+<div id="middle" class="continer-fluid black-border space div-bg-gray">
+  <h1 class="move-center">Portfolio</h1>
+   <p class="move-center">-----------------------</p>
+  <img src="https://img1.wsimg.com/Sitecore/3/9/website-builder-business-plus-plans-illu-02-v02.png">
+</div>
+
+
+<div id="bottom" class="continer-fluid black-border space div-bg-gray">
+   <h1 class="move-center">Contact Me</h1>
+   <p class="move-center">-----------------------</p>
+  
+ 
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email Address">
+        <input type="text" placeholder="Phone Number">
+        <input type="text" placeholder="Message">
+  <button class="btn">Send</button>
+ 
+        <h1>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
+I promise to reply A.S.A.P.
+Note: No spam/soliciting pour moi, merci.
+
+</div>
+   
+
+<div class="container-fluid div-bg-gray black-border">
+  <h1 class="move-left">About this page</h1>
+  <p class="move-left">Made with HTML5 and CSS</p>
+  <h1 class="move-right">Around the web</h1>
+  <a href="https://github.com/erocha2010">
+  <button class="btn move-right">Github</button>
+    </a>
+</div>
